@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      See UDC IT Help Page
+
+      See UDC IT Help
+      Author: Jose Mercedes
+      Date: November 21, 2015  
+
+      Filename:         IThelp.htm
+      Supporting files: modernizr-1.5.js, udcit.css, IT_Help.png,
+                        contact.php
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>See UDC IT Help</title>
+      <script src="modernizr-1.5.js"></script>
+      <link href="udcit.css" rel="stylesheet" />
+
+</head>
+
+   <body>
+ <p><img src="IT_Help.png" alt="See UDC" /> </p>
+      <html>
+<style type="text/css">
+H2 {color: #f2f2f2;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #782433;
+font-size: 45%;;
+text-align: center;}
+H1 {color: #782433;
+font-family: AngsanaUPC;
+text-align: center;}
+</style>
+<style type="text/css">
+#border {
+text-decoration: none;
+border-radius: 25px;
+background: #f2f2f2;
+padding: 20px;
+width: 200px;
+height: 150px;
+float: center;
+text-align: center:
+}
+#border:hover{
+background-color: #787878;
+transition: 3s ease;
+}
+a {
+color: #782433;
+}
+.page {
+text-align: center;
+font-weight: bold;
+}
+p {
+text-align: center;
+font-weight: bold;
+}
+.header {
+background: url(UDCBG.jpg);
+text-align: center;
+}
+.footer {
+}
+.row {
+background: #f2f2f2;
+}
+.page {
+float: center;
+position: center;
+text-align: center; }</style>
+<head>
+<link href="http://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="my-slider.css"/>
+<script src="ism-2.1.js"></script>
+<script src="ism-2.1.js-min"></script>
+<link rel="style" type="text/css" href="Style.css" media="all" />
+<title>UDC - University of the Distrcit of Columbia</title>
+</head>
+<body background= white; text-align= center; float= center; img-float= center; position= center;>
+<nav>
+<div class="page">
+<style type="text/css">
+ul{
+padding: 0;
+list-style: none;
+background: #f2f2f2;
+border-top:4px solid #782433;
+border-bottom: 2px solid #fff;
+}
+ul li{
+display: inline-block;
+position: relative;
+line-height: 21px;
+text-align: center;
+}
+ul li a{
+display: block;
+padding: 8px 25px;
+color: Black;
+text-decoration: none;
+}
+ul li a:hover{
+transition: 3s ease;
+color: #9A2E41;
+background: #787878;
+}
+ul li ul.dropdownlist{
+min-width: 125px; /* Set width of the dropdown */
+background: #f2f2f2;
+display: none;
+position: absolute;
+z-index: 999;
+left: 0;
+}
+ul li:hover ul.dropdownlist{
+display: block;
+}
+ul li ul.dropdownlist li{
+display: block;
+}
+</style>
+<div class="nav">
+<ul>
+<li>
+<a href="Home.htm">Home</a>
+</li>
+<li>
+<a href="About.htm">About</a>
+</li>
+<li class="dropdown">
+<a href="Accommodation.htm">Accommodation</a>
+<ul class="dropdownlist">
+<li><a href="Accommodation.htm">Apartment</a></li>
+<li><a href="Accommodation.htm">Roommate</a></li>
+</ul>
+</li>
+<li>
+<a href="SEEDC.htm">Turn Up</a>
+<ul class="dropdownlist">
+<li><a href="SEEDC.htm">Adams Morgan</a></li>
+<li><a href="SEEDC.htm">U Street</a></li>
+<li><a href="SEEDC.htm">DuPont Circle</a></li>
+<li><a href="SEEDC.htm">H Street</a></li>
+</ul>
+</li>
+</li>
+</ul>
+</div>
+</nav>
+<header>   
+   
+      
+        <div class="center">
+         <article>
+            <h1>I.T. Help Desk</h1>
+            <p>If the computer you are currently using is experiencing problems, please fill out the form below and a technician will be sent to check it out.
+            </p>
+            <p>Please note that UDC technicians may also be busy on other requests and may not assist you right away. Also, bear in mind that they may not be able to fix the computer in question during a class.
+            </p>
+         </article>
+      </header>
+        </div>
+   <div id="form">
+   <section>
+      <p>Required values are marked by an asterisk (*)</p>
+
+      <form action="contact.php" method="post">
+            <fieldset>
+		    <legend> Student/Faculty information </legend>
+		    <label class="labelOne" for="name">Name*:</label>
+		    <input name="Name"/><br/>
+
+		    <label for="idNumber">ID Barcode Number:</label>
+		    <input name="idNumber"/><br/>
+
+		    <label for="nNumber">N Number:</label>
+		    <input name="nNumber"/><br/>
+
+		    <label for="phone">Phone Number:</label>
+		    <input name="phone"/><br/>
+
+		    <label for="eMail">E-Mail*:</label>
+		    <input name="eMail"/><br/>
+	     </fieldset>
+
+	     <fieldset id="computer">
+	          <legend> Computer and Class Information </legend>
+
+                <label for="compNum">Computer Number:</label>
+		    <input name="compNum"/><br/>
+
+                <label for="classRoom" id="classRoom">Class Room Number:</label>
+		    <input name="classNum"/><br/>
+        
+                <label for="building" id="building">Building Number:</label>
+                <input name="building"/><br/>
+        
+                <label for="issue" id="issue">Describe the issue here*:</label>
+                <textarea name="building"></textarea><br/>
+                 <input class="btn" type="submit" value="Send E-Mail"/>
+                 <input class="btn" type="reset" value="Reset Form"/>
+           </fieldset>
+      </form>
+   </section>
+   </div>
+
+   <footer>
+      <address>
+         4200 Connecticut Ave NW, Washington, DC 20008 (202) 274-5000
+      </address>
+   </footer>
+
+   </body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+  color: #787878;
+  font-weight: bold;
+}
+
+p.double {
+  color: #782433;
+  width: 1203px;
+  height: 231px;
+}
+
+.center {
+    margin: auto;
+    width: 38%;
+    border:3px double #782433;
+    padding: 10px;
+    text-align: center;
+    color: #782433;
+}
+
+.centerLinks {
+    margin: auto;
+    width: 40%;
+    padding: 0px;
+    text-align: center;
+}
+
+form {
+  margin: auto;
+  width: 40%;
+  text-align: left;
+  color: #782433;
+}
+
+p {
+  text-align: center;
+  color: #782433;
+}
+
+address {
+    color: #782433;
+}
+
+h1 {
+  font-family: AngsanaUPC;
+  text-decoration: underline;
+}

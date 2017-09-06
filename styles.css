@@ -1,126 +1,344 @@
-  <style type="text/css">
+body{
+		
+	
+}
+#cssmenu
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid #47c9af;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+  background: #ffffff;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #47c9af;
+}
+
+
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+background-image: url("back.jpg");
+	background-size: 100% 80%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+<style type="text/css">
+
  H2 {color: #f2f2f2;
+
  font-family: Arial, Helvetica, sans-serif;
- background-color: #782433;}
+
+ background-color: #782433;
+
+font-size: 45%;;
+
+ text-align: center;}
+
+
+
 
  H1 {color: #782433; 
-   font-family: AngsanaUPC;}
+
+   font-family: AngsanaUPC;
+
+  text-align: center;}
+
+    p { font-size: 35%;}
 
 </style>
 
 
-<style type="text/css">#border {
+
+
+
+
+
+<style type="text/css">
+
+  #border {
+
   text-decoration: none;
+
     border-radius: 25px;
+
     background: #f2f2f2;
+
     padding: 20px; 
+
     width: 200px;
+
     height: 150px; 
+
+    float: center;
+
+    text-align: center: 
+
 } 
+
 #border:hover{
+
    background-color:  #787878;
+
   transition:  3s ease;
+
 }
+
 a {
+
   color: #782433;
+
 }
+
+
+
+
+
 
 
 .page { 
+
 text-align: center;
+
+  font-weight: bold;
+
 } 
+
 p {
+
   text-align: center;
+
+  font-weight: bold;
+
 }
+
 .header {
+
 background: url(UDCBG.jpg);
+
   text-align: center;
+
 }
+
 .footer {
+
 }
+
 .row {
+
   background:      #f2f2f2; 
-}</style>
-
-<head>
-<link rel="style" type="text/css" href="Style.css" media="all" /> 
-    <title>UDC - University of the Distrcit of Columbia</title>
-
-</head>
-
-<body background= white>
-    <nav>
-        <div class="page">
- 
-          
-<style type="text/css">
-
-    ul{
-        padding: 0;
-        list-style: none;
-        background: #f2f2f2;
-      border-top:4px solid #782433;
-      border-bottom: 2px solid #fff;
-
-    }
-
-    ul li{
-
-        display: inline-block;
-
-        position: relative;
-
-        line-height: 21px;
-
-        text-align: center;
-
-    }
-
-    ul li a{
-
-        display: block;
-
-        padding: 8px 25px;
-
-        color: Black;
-
-        text-decoration: none;
-
-    }
-
-    ul li a:hover{
-transition:  3s ease;
-        color: #9A2E41;
-        background: #787878;
-   
-    }
-
-    ul li ul.dropdownlist{
-
-        min-width: 125px; /* Set width of the dropdown */
-
-        background: #f2f2f2;
-
-        display: none;
-
-        position: absolute;
-
-        z-index: 999;
-
-        left: 0;
 
 }
 
-    ul li:hover ul.dropdownlist{
+  .page { 
 
-        display: block;
+  float: center;
 
-    }
+  position: center; 
 
-    ul li ul.dropdownlist li{
+    text-align: center; }</style>
 
-       display: block;
 
-    }
 
-</style>
+
+<font face= "book antiqua"; size= "2">
